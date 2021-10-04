@@ -1,25 +1,16 @@
 package com.company;
 
-import java.math.BigInteger;
+import java.io.IOException;
 import java.util.Scanner;
 
+
 public class Main {
+    public static void main(String args[]) throws IOException {
 
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        double Jum=0,Choi=0,HAP=0;
-        double N=sc.nextInt();
-        for(double i=0; i<N;i++){
+        Scanner sc=new Scanner(System.in);
+        String a=sc.next();
+        System.out.println(Integer.parseInt(a,16));
 
-            Jum= sc.nextInt();
-            if(Jum>Choi)
-            {
-                Choi=Jum;
-            }
-            HAP+=Jum;
-        }
-
-        System.out.println(100*HAP/Choi/N);
 
     }
 }
