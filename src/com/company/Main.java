@@ -10,11 +10,26 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Scanner(System. in);
+        int M=0, N=0;
+        N=sc.nextInt();
+        M=sc.nextInt();
 
-        int x=sc.nextInt();
-        
-        System.out.println(x-543);
+        if(M==1) {
+            System.out.println("NEWBIE!");
+        }
+
+        else if(M==2) {
+            System.out.println("NEWBIE!");
+        }
+        else if (N<M) {
+            System.out.println("TLE!");
+
+        }
+        else {
+
+            System.out.println("OLDBIE!");
+        }
 
 
     }
