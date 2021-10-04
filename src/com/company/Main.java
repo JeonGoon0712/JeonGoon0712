@@ -12,13 +12,28 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        int num1= sc.nextInt();
+        int ArrayA[] = new int[8];
+        String a="";
 
+        for (int i = 0; i < 8; i++) {
 
-        for(int i=1;i<num1+1;i++){
-
-            System.out.println(i);
+            ArrayA[i] = sc.nextInt();
         }
+        for (int i = 0; i < ArrayA.length-1; i++) {
+
+            if (ArrayA[i + 1] == ArrayA[i] + 1) {
+                a = "ascending";
+
+            } else if (ArrayA[i + 1] == ArrayA[i] - 1) {
+                a = "descending";
+
+            } else {
+                a = "mixed";
+                break;
+            }
+        }
+        System.out.println(a);
+        sc.close();
 
 
     }
