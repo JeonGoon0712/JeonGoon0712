@@ -10,12 +10,29 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        System.out.println("|\\_/|");
-        System.out.println("|q p|   /}");
-        System.out.println("( 0 )\"\"\"\\");
-        System.out.println("|\"^\"`    |");
-        System.out.println("||_/=\\\\__|");
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 
+        Integer.parseInt(br.readLine());
 
+        StringTokenizer st=new StringTokenizer(br.readLine()," ");
+
+        int max=-1000001;
+        int min=1000001;
+
+        while(st.hasMoreTokens()) {
+
+            int val=Integer.parseInt(st.nextToken());
+            if(max<val) {
+                max=val;
+
+            }
+            if(min>val) {
+                min=val;
+
+            }
+
+        }
+        System.out.println(min+" "+max);
+        
     }
 }
