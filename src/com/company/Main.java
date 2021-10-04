@@ -10,20 +10,15 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+        Scanner sc = new Scanner(System.in);
 
-        StringTokenizer st=new StringTokenizer(br.readLine());
+        int num1= sc.nextInt();
 
-        int A=Integer.parseInt(st.nextToken());
-        int B=Integer.parseInt(st.nextToken());
-        int C=Integer.parseInt(st.nextToken());
-
-        if (C <= B) {
-            System.out.println("-1");
-        }
-        else {
-            System.out.println((A/(C-B))+1);
-
+        for(int i=1;i<num1+1;i++){
+            for(int j=0;j<i;j++){
+                System.out.print("*");
+            }
+            System.out.println("");
         }
 
 
