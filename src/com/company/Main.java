@@ -7,18 +7,19 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int A=sc.nextInt();
-        int B=sc.nextInt();
+        double Jum=0,Choi=0,HAP=0;
+        double N=sc.nextInt();
+        for(double i=0; i<N;i++){
 
-        if(A>B){
-            System.out.println(">");
+            Jum= sc.nextInt();
+            if(Jum>Choi)
+            {
+                Choi=Jum;
+            }
+            HAP+=Jum;
+        }
 
-        }
-        else if(A<B){
-            System.out.println("<");
-        }
-        else
-            System.out.println("==");
+        System.out.println(100*HAP/Choi/N);
 
     }
 }
