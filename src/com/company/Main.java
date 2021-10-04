@@ -12,11 +12,8 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        Scanner in = new Scanner(System.in);
-
-        int ch = in.next().charAt(0);
-
-        System.out.print(ch);
+        long x= sc.nextLong();
+        System.out.println(x*4);
 
 
     }
