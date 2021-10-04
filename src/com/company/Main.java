@@ -12,11 +12,11 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        int x=sc.nextInt();
+        Scanner in = new Scanner(System.in);
 
-        int y=sc.nextInt();
+        int ch = in.next().charAt(0);
 
-        System.out.println(x*y);
+        System.out.print(ch);
 
 
     }
