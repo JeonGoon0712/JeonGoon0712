@@ -13,14 +13,18 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int num1= sc.nextInt();
+        for(int i=1;i<num1+1;i++) {
 
-        for(int i=1;i<num1+1;i++){
-            for(int j=0;j<i;j++){
+            for(int j=0;j<num1-i;j++){
+                System.out.print(" ");
+            }
+
+            for(int z=0;z<i;z++){
+
                 System.out.print("*");
             }
-            System.out.println("");
+            System.out.println();
         }
-
-
+        
     }
 }
