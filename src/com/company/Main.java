@@ -10,27 +10,16 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-        int[] ArrayA=new int[9];
-        int max=0;
-        int index=0;
+        Scanner sc = new Scanner(System.in);
 
-        for(int i=0;i<9;i++)
-        {
-            ArrayA[i]=Integer.parseInt(br.readLine());
+        int num1= sc.nextInt();
 
+
+        for(int i=1;i<10;i++){
+
+            System.out.println(num1+" * "+i+" = "+num1*i);
         }
-        for(int i=0;i<9;i++)
-        {
-            if(ArrayA[i]>max)
-            {
-                max=ArrayA[i];
-                index=i+1;
 
-            }
-        }
-        System.out.println(max);
-        System.out.println(index);
 
     }
 }
