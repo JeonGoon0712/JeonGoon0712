@@ -10,12 +10,27 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
+        BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
+        int[] ArrayA=new int[9];
+        int max=0;
+        int index=0;
 
+        for(int i=0;i<9;i++)
+        {
+            ArrayA[i]=Integer.parseInt(br.readLine());
 
-        System.out.println(x+y);
+        }
+        for(int i=0;i<9;i++)
+        {
+            if(ArrayA[i]>max)
+            {
+                max=ArrayA[i];
+                index=i+1;
+
+            }
+        }
+        System.out.println(max);
+        System.out.println(index);
 
     }
 }
