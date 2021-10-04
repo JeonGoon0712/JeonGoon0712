@@ -5,12 +5,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        int y = sc.nextInt();
+        Scanner sc=new Scanner(System.in);
+        double M=0, N=0;
+        N=sc.nextDouble();
+        M=sc.nextDouble();
 
-
-        System.out.println(x-y);
+        System.out.println(N/M);
 
     }
 }
