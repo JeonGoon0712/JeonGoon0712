@@ -10,21 +10,20 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        Scanner in = new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
+        StringTokenizer st;
+        String str;
 
-        int c = in.nextInt();
-        int arr[] = new int[c];
+        while( (str=br.readLine()) != null ){
 
-        for (int i = 0; i < c; i++) {
-            int a = in.nextInt();
-            int b = in.nextInt();
-            arr[i] = a + b;
+            st = new StringTokenizer(str," ");
+            int a = Integer.parseInt(st.nextToken());
+            int b = Integer.parseInt(st.nextToken());
+            sb.append(a+b).append("\n");
+
         }
-        in.close();
-
-        for (int k : arr) {
-            System.out.println(k);
-        }
+        System.out.print(sb);
 
     }
 }
