@@ -10,21 +10,15 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        Scanner sc = new Scanner(System.in);
+        Scanner sc=new Scanner(System.in);
+        int result=0;
+        for(int i=0; i<5;i++){
+            int a=sc.nextInt();
+            result+=Math.pow(a,2);
 
-        int num1= sc.nextInt();
-        for(int i=1;i<num1+1;i++) {
-
-            for(int j=0;j<num1-i;j++){
-                System.out.print(" ");
-            }
-
-            for(int z=0;z<i;z++){
-
-                System.out.print("*");
-            }
-            System.out.println();
         }
-        
+        System.out.println(result%10);
+        sc.close();
+
     }
 }
