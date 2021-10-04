@@ -10,16 +10,12 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        System.out.println("     /~\\");
-        System.out.println("    ( oo|");
-        System.out.println("    _\\=/_");
-        System.out.println("   /  _  \\");
-        System.out.println("  //|/.\\|\\\\");
-        System.out.println(" ||  \\ /  ||");
-        System.out.println("============");
-        System.out.println("|          |");
-        System.out.println("|          |");
-        System.out.println("|          |");
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+        int a=Integer.parseInt(br.readLine());
+        int b=Integer.parseInt(br.readLine());
+
+        System.out.println(b+(b-a));
 
     }
 }
