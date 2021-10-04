@@ -7,12 +7,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        BigInteger a=sc.nextBigInteger();
-        BigInteger b=sc.nextBigInteger();
+        int A=sc.nextInt();
+        int B=sc.nextInt();
 
+        if(A>B){
+            System.out.println(">");
 
-        System.out.println(a.divide(b));
-        System.out.println(a.remainder(b));
+        }
+        else if(A<B){
+            System.out.println("<");
+        }
+        else
+            System.out.println("==");
 
     }
 }
