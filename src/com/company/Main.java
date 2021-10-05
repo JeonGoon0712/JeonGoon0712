@@ -11,25 +11,11 @@ public class Main {
     public static void main(String args[]) throws IOException {
 
         Scanner sc=new Scanner(System. in);
-        int M=0, N=0;
-        N=sc.nextInt();
-        M=sc.nextInt();
-
-        if(M==1) {
-            System.out.println("NEWBIE!");
-        }
-
-        else if(M==2) {
-            System.out.println("NEWBIE!");
-        }
-        else if (N<M) {
-            System.out.println("TLE!");
-
-        }
-        else {
-
-            System.out.println("OLDBIE!");
-        }
+        int A=sc.nextInt();
+        if(A%5!=0)
+            System.out.println((A/5)+1);
+        else
+            System.out.println(A/5);
 
 
     }
