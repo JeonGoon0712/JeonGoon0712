@@ -10,13 +10,11 @@ import java.util.StringTokenizer;
 public class Main {
     public static void main(String args[]) throws IOException {
 
-        Scanner sc=new Scanner(System. in);
-        int A=sc.nextInt();
-        if(A%5!=0)
-            System.out.println((A/5)+1);
-        else
-            System.out.println(A/5);
-
+        System.out.println("       _.-;;-._");
+        System.out.println("'-..-'|   ||   |");
+        System.out.println("'-..-'|_.-;;-._|");
+        System.out.println("'-..-'|   ||   |");
+        System.out.println("'-..-'|_.-''-._|");
 
     }
 }
