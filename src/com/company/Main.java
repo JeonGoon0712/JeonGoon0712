@@ -12,9 +12,13 @@ public class Main {
 
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st= new StringTokenizer(br.readLine());
-        int A=Integer.parseInt(st.nextToken());
-        int B=Integer.parseInt(st.nextToken());
 
-        System.out.println(A*(B-1)+1);
+        int R1=Integer.parseInt(st.nextToken());
+        int S=Integer.parseInt(st.nextToken());
+
+        System.out.println(2*S-R1);
+
+
+
     }
 }
