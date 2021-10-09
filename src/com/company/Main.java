@@ -11,14 +11,17 @@ public class Main {
     public static void main(String args[]) throws IOException {
 
         BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st= new StringTokenizer(br.readLine());
 
-        int R1=Integer.parseInt(st.nextToken());
-        int S=Integer.parseInt(st.nextToken());
+        int A=Integer.parseInt(br.readLine());
+        int sum=0;
 
-        System.out.println(2*S-R1);
+        for(int i=1;i<=A;i++){
+            sum+=i;
 
 
+        }
+
+        System.out.println(sum);
 
     }
 }
