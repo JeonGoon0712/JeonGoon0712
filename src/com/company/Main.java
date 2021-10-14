@@ -12,10 +12,15 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        int A=1946;
+        int A=sc.nextInt();
         int B=sc.nextInt();
+        int C=sc.nextInt();
 
-        System.out.println(B-A);
+        System.out.println((A+B)%C);
+        System.out.println(((A%C) + (B%C))%C);
+        System.out.println((A*B)%C);
+        System.out.println( ((A%C)*(B%C))%C);
+
 
 
 
