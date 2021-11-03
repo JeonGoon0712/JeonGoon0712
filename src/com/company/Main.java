@@ -1,5 +1,7 @@
 package com.company;
 
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -7,21 +9,39 @@ import java.util.Scanner;
 public class Main {
     public static void main(String args[]) throws IOException {
 
+        Scanner sc=new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
-        String a = sc.next();
-        String b = sc.next();
-        int ans = a.length();
+        int[] arr = new int[1001];
+        int banbok=0;
+        int a=0;
+        int dap=0;
 
-        for(int i=0; i<=b.length()-a.length(); i++) {
-            int cnt = 0;
-            for(int j=0; j<a.length(); j++) {
-                if(a.charAt(j) != b.charAt(i+j))
-                    cnt++;
+            for (int i = 1; i <= 45; i++) {
+
+                while (banbok <i) {
+
+                    arr[a] = i;
+                    a++;
+                    banbok++;
+                    if(a==1000)
+                        break;
+
+                }
+                banbok = 0;
             }
-            ans = Math.min(cnt, ans);
-        }
-        System.out.println(ans);
+
+            int A=sc.nextInt();
+            int B=sc.nextInt();
+
+            while(A<=B){
+
+                dap+=arr[A-1];
+                A++;
+
+
+            }
+        System.out.println(dap);
 
         }
+
 }
