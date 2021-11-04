@@ -11,37 +11,20 @@ public class Main {
 
         Scanner sc=new Scanner(System.in);
 
-        int[] arr = new int[1001];
-        int banbok=0;
-        int a=0;
-        int dap=0;
+        boolean bool[]=new boolean[101];
+        int size=sc.nextInt();
 
-            for (int i = 1; i <= 45; i++) {
+        int cnt=0;
 
-                while (banbok <i) {
+        for(int i=0;i<size;i++) {
+            int tmp = sc.nextInt();
 
-                    arr[a] = i;
-                    a++;
-                    banbok++;
-                    if(a==1000)
-                        break;
-
-                }
-                banbok = 0;
-            }
-
-            int A=sc.nextInt();
-            int B=sc.nextInt();
-
-            while(A<=B){
-
-                dap+=arr[A-1];
-                A++;
-
-
-            }
-        System.out.println(dap);
+            if(bool[tmp]==true)
+                cnt++;
+            else
+                bool[tmp] = true;
 
         }
-
+        System.out.println(cnt);
+        }
 }
