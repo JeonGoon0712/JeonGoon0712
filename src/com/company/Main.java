@@ -6,25 +6,32 @@ import java.io.IOException;
 import java.util.Scanner;
 
 
+
 public class Main {
+
     public static void main(String args[]) throws IOException {
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
+        int X = sc.nextInt();
+        int Y = sc.nextInt();
 
-        boolean bool[]=new boolean[101];
-        int size=sc.nextInt();
+        sc.close();
 
-        int cnt=0;
+        int x = Rev(X);
+        int y = Rev(Y);
+        int res = Rev(x + y);
+        System.out.println(res);
+    }
 
-        for(int i=0;i<size;i++) {
-            int tmp = sc.nextInt();
-
-            if(bool[tmp]==true)
-                cnt++;
-            else
-                bool[tmp] = true;
-
+    private static int Rev(int N) {
+        String str = "";
+        while (N > 0) {
+            str += N % 10;
+            N /= 10;
         }
-        System.out.println(cnt);
-        }
+        return Integer.parseInt(str);
+
+    }
+
+
 }
